@@ -3,27 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication12;
+package OS_ALEJANDRA_NELSON;
 
 /**
  *
- * @author AleSaavedra
+ * @author NELSON CANDIA Y ALEJANDRA SAAVEDRA
  */
-public class Nodo {
+public class Container {
    private Pro proceso;
-    private Nodo prox;
-
-    public Nodo(Pro proceso) {
+   private Container prox;
+    
+    //constructor por defecto
+    public Container(Pro proceso) {
         this.proceso = proceso;
     }
 
-   
-    public Nodo getProx() {
+    //setter and getter
+    public Container getProx() {
         return prox;
     }
 
-
-    public void setProx(Nodo proximo) {
+    public void setProx(Container proximo) {
         this.prox = proximo;
     }
 

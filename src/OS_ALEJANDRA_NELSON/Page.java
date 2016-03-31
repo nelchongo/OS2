@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication12;
+package OS_ALEJANDRA_NELSON;
 
 /**
  *
- * @author AleSaavedra
+ * @author NELSON CANDIA Y ALEJANDRA SAAVEDRA
  */
 public class Page {
-    private int datos;
+    private int ID;
 
-    public Page(int datos) {
-        this.datos= datos;  
+    public Page(int id) {
+        this.ID= id;  
     }    
 }

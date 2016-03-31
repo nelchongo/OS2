@@ -3,35 +3,34 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication12;
+package OS_ALEJANDRA_NELSON;
 
 /**
  *
- * @author AleSaavedra
+ * @author NELSON CANDIA Y ALEJANDRA SAAVEDRA
  */
 public class Pro {
        
    //****ATRIBUTOS****
     private Page pag[];
     private int tam;
-    private int datos;
+    private int id;
     private boolean bloq;
     private boolean susp;
     private boolean act;
     
     
     //****CONSTRUCTORES****
-    public Pro (int tam, int datos, int paginas) {
+    public Pro (int tam, int id, int paginas) {
         this.tam = tam;
-        this.datos = datos;
+        this.id = id;
         bloq=false;
         susp= false;
         act=false;
         
         
         /////*****DETERMINA PAGINAS*****
-        if((tam % paginas) == 0)
-        {
+        if((tam % paginas) == 0){
             pag = new Page[tam/paginas];
         }
         else{
@@ -41,20 +40,10 @@ public class Pro {
         }
         
         ////******CREA NUEVA PAGINA*******
-            for (int i = 0; i < pag.length; i++) 
-            {
-                Page p= new Page(datos);
+            for (int i = 0; i < pag.length; i++){
+                Page p= new Page(id);
             }
     }
-    
-    public Pro(int datos, Page[] paginas, boolean bloq, boolean susp, boolean act) {
-        this.datos = datos;
-        this.pag = pag;
-        this.bloq = bloq;
-        this.susp = susp;
-        this.act = act;
-    }
-
     
     
     //****SETTERS - GETTERS****
@@ -75,12 +64,12 @@ public class Pro {
         this.tam = tam;
     }
 
-    public int getDatos() {
-        return datos;
+    public int getID() {
+        return id;
     }
 
-    public void setDatos(int datos) {
-        this.datos = datos;
+    public void setID(int id) {
+        this.id = id;
     }
 
     public boolean isBloq() {
